@@ -1,0 +1,34 @@
+user: {
+    id,
+    userName,
+    email,
+    dob (ngày tháng năm sinh),
+    avatar,
+    picture,
+    address,
+    story,
+    phoneNumber,
+    accountId
+}
+account: {
+    id,
+    email,
+    password,
+    role,
+    userId
+}
+
+
+
+yêu cầu:
+- xây dựng model cho user
+- thực hiện check đăng nhập:
+    + dùng phương thức findByEmail để đăng nhập
+    + thực hiện kiểm tra status của account:
+        + true -> đăng nhập thành công
+        + false ->
+            + tạo ra 1 route của user, để thực hiện điền thông tin cá nhân
+            (tạo phương thức của user để thêm thông tin:
+            khi thêm thông tin xong sẽ cần lưu được accountId = id của account mà người dùng đã đăng nhập vừa rồi
+    đồng thời cập nhật userId của account là id của user vừa thêm thông tin
+            )
